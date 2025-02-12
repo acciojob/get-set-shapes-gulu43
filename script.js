@@ -20,7 +20,7 @@ class Rectangle {
 
 }
 
-class Square extends Animal {
+class Square extends Rectangle {
     constructor(side){
         if (side<0 ) {
             throw new Error("1>");   
@@ -30,7 +30,7 @@ class Square extends Animal {
     
 
     getPerimeter(){
-        return 2*(_width*_height);
+        return 4*_width;
     }
 }
 
