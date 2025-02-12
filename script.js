@@ -2,7 +2,7 @@
 class Rectangle {
     constructor(width, height){
         if (width<0 || height<0) {
-            console.log("give me val bif than 1")
+			throw new Error("1>")
         }
         this._width = width;
         this._height = height;
@@ -23,17 +23,19 @@ class Rectangle {
 class Square extends Animal {
     constructor(side){
         if (side<0 ) {
-            throw new Error("1>");
-            
+            throw new Error("1>");   
         }
         super(side,side);
     }
     
 
     getPerimeter(){
-        return 4*_width;
+        return 4*this.side;
     }
 }
+
+
+
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;
