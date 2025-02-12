@@ -30,7 +30,7 @@ class Square extends Animal {
     
 
     getPerimeter(){
-        return 2*(_width*__height);
+        return 2*(_width*_height);
     }
 }
 
